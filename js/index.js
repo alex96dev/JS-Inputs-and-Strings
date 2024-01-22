@@ -16,6 +16,6 @@ const secondInput = document.querySelector("[data-js=second-input]");
 const button = document.querySelector("[data-js=button]");
 
 button.addEventListener("click", () => {
-    secondInput.value=firstInput.value
+    secondInput.value=firstInput.value.toUpperCase()
 });
 

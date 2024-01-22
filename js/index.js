@@ -15,7 +15,11 @@ const firstInput = document.querySelector("[data-js=first-input]");
 const secondInput = document.querySelector("[data-js=second-input]");
 const button = document.querySelector("[data-js=button]");
 
+let help1;
+
 button.addEventListener("click", () => {
-    secondInput.value=firstInput.value.toUpperCase()
+    help1 = firstInput.value;
+    firstInput.value = secondInput.value;
+    secondInput.value = help1;
 });
 
